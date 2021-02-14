@@ -1,0 +1,46 @@
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <a href="" onclick="goTo(event, 'tambah_barang')"><button type="button"
+                                class="btn btn-primary btn-flat" style="min-width: 200px; float:right;"><i
+                                    class="fas fa-plus mr-3"></i>Tambah
+                                Barang</button></a>
+                    </div>
+                    <div class="card-body">
+                        <table id="inventory" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Action</th>
+                                    <th>Nama</th>
+                                    <th>Kode Inventaris</th>
+                                    <th>Jumlah</th>
+                                    <th>Harga Satuan</th>
+                                    <th>Total Harga</th>
+                                    <th>Tanggal Perolehan</th>
+                                    <th>Lokasi</th>
+                                    <th>Kategori</th>
+                                    <th>Keterangan</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabel-inventory">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="app/js/inventory.js"></script>
+<script>
+    table = $('#inventory').DataTable( {
+        retrieve: true,
+        "responsive": true,
+        "autoWidth": false
+    } );
+</script>

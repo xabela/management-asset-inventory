@@ -1,0 +1,82 @@
+<div class="d-flex" id="wrapper">
+    <div class="bg-dark" id="sidebar-wrapper">
+            <a href="" class="brand-link">
+                <img src="assets/img/picta.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                    style="opacity: .8">
+                <span class="brand-text font-weight-light ml-2">Pictafish</span>
+            </a><hr class="bg-secondary">
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                    <img src="assets/img/admin.png" class="img-circle elevation-2" alt="User Image">
+                </div>
+                <div class="info">
+                    <a class="" class="text-white" id="nama_admin"></a>
+                </div>
+            </div>
+            <nav class="lsit">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
+                    <li class="nav-item test">
+                        <a href="" onclick="goTo(event, 'dashboard')" class="nav-link">
+                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <p class="mymenu">Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" onclick="goTo(event, 'inventory')" class="nav-link">
+                            <i class="nav-icon fas fa-database"></i>
+                            <p class="mymenu"> Inventaris Asset </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" onclick="goTo(event, 'lokasi')" class="nav-link">
+                            <i class="nav-icon fas fa-compass"></i>
+                            <p class="mymenu"> Lokasi Tambak </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" onclick="goTo(event, 'kategori')" class="nav-link">
+                            <i class="nav-icon fas fa-list"></i>
+                            <p class="mymenu">Kategori Asset</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" onclick="goTo(event, 'user')" class="nav-link">
+                            <i class="nav-icon fas fa-users"></i>
+                            <p class="mymenu">Member</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" onclick="signOut()" class="nav-link">
+                            <i class="nav-icon fas fa-sign-out-alt"></i>
+                            <p class="mymenu">Log Out</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    </div>
+
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand navbar-white navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="menu-toggle" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid">
+            <div class="page-header mt-4 ml-2">
+                <h3 id="page-title"><b></b></h3>
+                <hr>
+            </div>
+            <div id="app"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>

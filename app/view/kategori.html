@@ -1,0 +1,87 @@
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <button type="button" data-toggle="modal" data-target="#modal-kategori"
+                            class="btn btn-primary btn-flat" style="min-width: 150px; float:right;"><i
+                                class="fas fa-plus mr-3"></i>Tambah
+                            Kategori</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Kategori</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table-kategori">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- modal  -->
+<div class="modal fade" id="modal-kategori">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Tambah Kategori</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" onsubmit="buatKategori();" action="javascript:void(0);" method="POST">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Nama Kategori</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="buat-kategori" autofocus
+                                placeholder="Nama Kategori">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary float-right">Simpan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal edit  -->
+<div class="modal fade" id="modal-edit-kategori">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Kategori</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Nama Kategori</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="edit-nama-kategori" autofocus
+                                placeholder="Nama Kategori">
+                        </div>
+                    </div>
+                    <input type="hidden" id="id_kategori">
+                    <button type="submit" id="edit-kategori" class="btn btn-primary float-right">Simpan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app/js/kategori.js"></script>

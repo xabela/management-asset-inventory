@@ -1,0 +1,71 @@
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <h1 class="mx-auto">Detail Barang</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Label</th>
+                                        <th>Keterangan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Kode Inventaris</td>
+                                        <td id="kode_inventaris"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nama</td>
+                                        <td id="nama"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jumlah</td>
+                                        <td id="jumlah"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Harga Satuan</td>
+                                        <td id="harga"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Harga</td>
+                                        <td id="total"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tanggal Perolehan</td>
+                                        <td id="tanggal_beli"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lokasi</td>
+                                        <td id="lokasi"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kategori</td>
+                                        <td id="kategori"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Status</td>
+                                        <td id="status"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button"  onclick="goTo(event, 'inventory')" class="btn btn-secondary float-right">Kembali</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app/js/detail_barang.js"></script>
